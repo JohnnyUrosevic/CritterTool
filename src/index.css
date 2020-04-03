@@ -1,3 +1,14 @@
 body {
     background-color: #F2E9C0;
+    
+}
+
+.gallery {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(5, 7vw);
+    grid-auto-columns: 250px;
+    grid-gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
 }

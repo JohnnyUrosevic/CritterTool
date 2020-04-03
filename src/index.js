@@ -24,7 +24,7 @@ class App extends React.Component {
     const critters_type = available_critters.map(x => x.concat(this.state.fish));
     const crittersJSX = critters_type.map(MapCritterToJSX);
     return (
-      <div>
+      <div className='gallery'>
         {crittersJSX}
       </div>
     );
