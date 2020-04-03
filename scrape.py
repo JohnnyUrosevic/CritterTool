@@ -27,7 +27,7 @@ def scrape_table(table, fish, fp):
             if cells[i].contents[0].strip() == '✓':
                 months.append(i - start + 1)
 
-        data += ',' + str(months)
+        data += ',' + str(months) + '\n'
         fp.write(data)
 
 fish_table = fish_soup.table.tr.td.table.tbody
