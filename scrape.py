@@ -29,7 +29,6 @@ def scrape_table(table, fish, fp):
 
         data += ',' + str(months)
         fp.write(data)
-        break
 
 fish_table = fish_soup.table.tr.td.table.tbody
 bug_table = bug_soup.find_all('table')[2].td
