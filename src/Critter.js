@@ -7,7 +7,7 @@ class Critter extends React.Component {
   }
   render() {
     const img_file = '/images/' + (this.props.fish ? "fish/" : "bug/")
-        + this.props.name.split().join() + '.png';
+        + this.props.name.split(' ').join('') + '.png';
     return (
         <img src={img_file} alt=''/>
     );

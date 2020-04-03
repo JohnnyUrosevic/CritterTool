@@ -15,10 +15,11 @@ def scrape_table(table, fish, fp):
         imgdir = join("public","images","fish" if fish else "bug")
         urlretrieve(imgurl, join(imgdir, "".join(name.split()) + '.png'))
         
-        data = name
-        for i in range(2, 4):
-            data += ',' + cells[i].contents[0].strip()
-        data += ',' + cells[4 + int(fish)].small.contents[0].strip()
+        data = '["' + name + '"'
+        price = cells[2].contents[0].strip()
+        data += ',' + (price if price != '?' else "0")
+        data += ',' + '"' + cells[3].contents[0].strip() + '"'
+        data += ',' + '"' + cells[4 + int(fish)].small.contents[0].strip() + '"'
 
         # months
         start = 5 + int(fish)
@@ -27,13 +28,17 @@ def scrape_table(table, fish, fp):
             if cells[i].contents[0].strip() == '✓':
                 months.append(i - start + 1)
 
-        data += ',' + str(months) + '\n'
+        data += ',' + str(months) + '],\n'
         fp.write(data)
 
 fish_table = fish_soup.table.tr.td.table.tbody
 bug_table = bug_soup.find_all('table')[2].td
 
-with open('public/fish_data.csv', 'w') as fp:
+with open('src/constants.js', 'w') as fp:
+    fp.write("export const FISH = [\n")
     scrape_table(fish_table, True, fp)
-with open('public/bug_data.csv', 'w') as fp:
+    fp.write("]\n")
+
+    fp.write("export const BUGS= [\n")
     scrape_table(bug_table, False, fp)
+    fp.write("]\n")
