@@ -14,6 +14,19 @@ class App extends React.Component {
     this.state = {
       fish: true
     }
+
+    this.handleFishClick = this.handleFishClick.bind(this);
+    this.handleBugClick = this.handleBugClick.bind(this);
+  }
+  handleFishClick() {
+    this.setState({
+      fish: true
+    });
+  }
+  handleBugClick() {
+    this.setState({
+      fish: false
+    });
   }
   render() {
     const critters = this.state.fish ? Constants.FISH : Constants.BUGS;
@@ -24,8 +37,18 @@ class App extends React.Component {
     const critters_type = available_critters.map(x => x.concat(this.state.fish));
     const crittersJSX = critters_type.map(MapCritterToJSX);
     return (
-      <div className='gallery'>
-        {crittersJSX}
+      <div>
+        <div className='buttons'>
+          <button className='critterButton' onClick={this.handleFishClick}>
+            <img src='fish_button.png' alt="Fish"/>
+          </button>
+          <button className='critterButton' onClick={this.handleBugClick}>
+            <img src='bug_button.png' alt="Bug"/>
+          </button>
+        </div>
+        <div className='gallery'>
+          {crittersJSX}
+        </div>
       </div>
     );
   }
