@@ -11,7 +11,9 @@ class Critter extends React.Component {
       this.createPopup = this.createPopup.bind(this);
   }
   createPopup () {
-    this.props.setPopup(<Popup name={this.props.name} setPopup={this.props.setPopup}/>)
+    const popup = <Popup name={this.props.name} setPopup={this.props.setPopup}
+        price={this.props.price} location={this.props.location} time={this.props.time}/>;
+    this.props.setPopup(popup);
   }
   render() {
     const month = new Date().getMonth() + 1;
