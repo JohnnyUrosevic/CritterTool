@@ -1,3 +1,7 @@
-.critter-container {
+.critterContainer {
     border: 2px solid #DAD1A1;
+}
+
+.critterExpiring {
+    background-color: rgba(255, 0, 0, 0.5);  
 }

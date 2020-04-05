@@ -5,8 +5,10 @@ body {
 
 .critterButton {
     background: none;
-    border: 1px solid #DAD1A1;
-    padding: 0%;
+    border: 3px solid #DAD1A1;
+    padding: 0px;
+    margin-right: 5px;
+    margin-bottom: 1px;
 }
 
 .gallery {

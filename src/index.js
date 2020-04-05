@@ -40,10 +40,10 @@ class App extends React.Component {
       <div>
         <div className='buttons'>
           <button className='critterButton' onClick={this.handleFishClick}>
-            <img src='fish_button.png' alt="Fish"/>
+            <img src={this.state.fish ? 'fish_button_activated.png':'fish_button.png'} alt="Fish"/>
           </button>
           <button className='critterButton' onClick={this.handleBugClick}>
-            <img src='bug_button.png' alt="Bug"/>
+            <img src={this.state.fish ? 'bug_button.png' : 'bug_button_activated.png'} alt="Bug"/>
           </button>
         </div>
         <div className='gallery'>

@@ -8,10 +8,12 @@ class Critter extends React.Component {
       super(props);
   }
   render() {
+    const month = new Date().getMonth() + 1;
+    const expiring = !this.props.months.includes(month + 1);
     const img_file = '/images/' + (this.props.fish ? "fish/" : "bug/")
         + this.props.name.split(' ').join('') + '.png';
     return (
-        <div className="critter-container">
+        <div className={`critterContainer ${expiring ? 'critterExpiring' : ''}`}>
             <img src={img_file} alt={this.props.name} title={this.props.name}/>
         </div>
     );
