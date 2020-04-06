@@ -19,3 +19,8 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
 }
+
+@font-face {
+  font-family: 'Humming';
+  src: local('Humming'), url(/fonts/Humming.otf) format('opentype');
+}
