@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b2f1df35fd2f58cd28ad559ccbafd75",
+    "revision": "a2cf33dbd9b46762c54d8c9b21e704b5",
     "url": "/CritterTool/index.html"
   },
   {
-    "revision": "713fb0b4164e471ca5a1",
-    "url": "/CritterTool/static/css/main.82158106.chunk.css"
+    "revision": "7f6597f204d87593e03a",
+    "url": "/CritterTool/static/css/main.390e8244.chunk.css"
   },
   {
     "revision": "37039790dc7a5f780ccf",
@@ -16,11 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CritterTool/static/js/2.daaf27d2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "713fb0b4164e471ca5a1",
-    "url": "/CritterTool/static/js/main.132b025d.chunk.js"
+    "revision": "7f6597f204d87593e03a",
+    "url": "/CritterTool/static/js/main.4a8b1a55.chunk.js"
   },
   {
     "revision": "7b07203206a16c87d5dc",
     "url": "/CritterTool/static/js/runtime-main.d9e58165.js"
+  },
+  {
+    "revision": "8272f4a622ff88ca49539c87f8442049",
+    "url": "/CritterTool/static/media/Humming.8272f4a6.otf"
   }
 ]);
