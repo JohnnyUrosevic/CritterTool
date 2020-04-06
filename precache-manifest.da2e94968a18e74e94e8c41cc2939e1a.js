@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a2cf33dbd9b46762c54d8c9b21e704b5",
+    "revision": "d3226e72827bcbf8d5c7366672b3d235",
     "url": "/CritterTool/index.html"
   },
   {
-    "revision": "7f6597f204d87593e03a",
-    "url": "/CritterTool/static/css/main.390e8244.chunk.css"
+    "revision": "8035346d7c35ff4f39f0",
+    "url": "/CritterTool/static/css/main.5301d0b8.chunk.css"
   },
   {
     "revision": "37039790dc7a5f780ccf",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CritterTool/static/js/2.daaf27d2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7f6597f204d87593e03a",
+    "revision": "8035346d7c35ff4f39f0",
     "url": "/CritterTool/static/js/main.4a8b1a55.chunk.js"
   },
   {
