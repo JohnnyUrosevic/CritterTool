@@ -8,6 +8,7 @@ body {
     padding: 0px;
     margin-right: 5px;
     margin-bottom: 1px;
+    float: left;
 }
 
 .gallery {
@@ -18,9 +19,33 @@ body {
     grid-gap: 10px;
     overflow-x: auto;
     overflow-y: hidden;
+    clear: both;
 }
 
 @font-face {
   font-family: 'Humming';
   src: local('Humming'), url(./fonts/Humming.otf) format('opentype');
+}
+
+.switch-track {
+    float: left;
+    width: 130px;
+    height: 62px;
+    border: 3px solid rgb(95, 89, 55);
+    border-radius: 31px;
+    padding: 0px;
+    margin-bottom: 1px;
+    background-color: #DAD1A1;
+}
+
+.switch-button {
+    font-family: 'Humming';
+    background-color: #F2E9C0;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

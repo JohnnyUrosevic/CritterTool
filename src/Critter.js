@@ -17,7 +17,7 @@ class Critter extends React.Component {
   }
   render() {
     const month = new Date().getMonth() + 1;
-    const expiring = !this.props.months.includes(month + 1);
+    const expiring = !this.props.months.includes(this.props.current_month % 12 + 1);
     const img_file = process.env.PUBLIC_URL + '/images/' + 
       (this.props.fish ? "fish/" : "bug/") + 
       this.props.name.split(' ').join('') + '.png';
@@ -37,6 +37,7 @@ Critter.propTypes = {
     months: PropTypes.array.isRequired,
     fish: PropTypes.bool.isRequired,
     setPopup: PropTypes.func.isRequired,
+    current_month: PropTypes.number.isRequired,
 }
 
 export default Critter;
