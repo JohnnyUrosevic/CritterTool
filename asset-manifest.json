@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/CritterTool/static/css/main.82158106.chunk.css",
+    "main.js": "/CritterTool/static/js/main.132b025d.chunk.js",
+    "main.js.map": "/CritterTool/static/js/main.132b025d.chunk.js.map",
+    "runtime-main.js": "/CritterTool/static/js/runtime-main.d9e58165.js",
+    "runtime-main.js.map": "/CritterTool/static/js/runtime-main.d9e58165.js.map",
+    "static/js/2.daaf27d2.chunk.js": "/CritterTool/static/js/2.daaf27d2.chunk.js",
+    "static/js/2.daaf27d2.chunk.js.map": "/CritterTool/static/js/2.daaf27d2.chunk.js.map",
+    "index.html": "/CritterTool/index.html",
+    "precache-manifest.bdedc837ed263cedf35fb92ddfb5878e.js": "/CritterTool/precache-manifest.bdedc837ed263cedf35fb92ddfb5878e.js",
+    "service-worker.js": "/CritterTool/service-worker.js",
+    "static/css/main.82158106.chunk.css.map": "/CritterTool/static/css/main.82158106.chunk.css.map",
+    "static/js/2.daaf27d2.chunk.js.LICENSE.txt": "/CritterTool/static/js/2.daaf27d2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9e58165.js",
+    "static/js/2.daaf27d2.chunk.js",
+    "static/css/main.82158106.chunk.css",
+    "static/js/main.132b025d.chunk.js"
+  ]
+}
