@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/CritterTool/precache-manifest.031573ac6cd5fa6ff1896abb0840512d.js"
+  "/CritterTool/precache-manifest.dff737cfa7b7f0ed489b7fb4ac067bba.js"
 );
 
 self.addEventListener('message', (event) => {
