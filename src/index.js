@@ -63,7 +63,7 @@ class App extends React.Component {
             <img src={process.env.PUBLIC_URL + (this.state.fish ? '/bug_button.png' : '/bug_button_activated.png')} alt="Bug"/>
           </button>
           <div className='switch-track' onClick={this.toggleHemisphere}>
-            <div className='switch-button' style={{float: this.state.south ? "right" : "left"}}>
+            <div className={`switch-button ${this.state.south ? 'toggled' : '' }`}>
               {this.state.south ? 'S' : 'N'}
             </div>
           </div>
