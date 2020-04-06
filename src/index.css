@@ -22,5 +22,5 @@ body {
 
 @font-face {
   font-family: 'Humming';
-  src: local('Humming'), url(/fonts/Humming.otf) format('opentype');
+  src: local('Humming'), url(./fonts/Humming.otf) format('opentype');
 }

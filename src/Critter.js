@@ -18,8 +18,9 @@ class Critter extends React.Component {
   render() {
     const month = new Date().getMonth() + 1;
     const expiring = !this.props.months.includes(month + 1);
-    const img_file = '/images/' + (this.props.fish ? "fish/" : "bug/")
-        + this.props.name.split(' ').join('') + '.png';
+    const img_file = process.env.PUBLIC_URL + '/images/' + 
+      (this.props.fish ? "fish/" : "bug/") + 
+      this.props.name.split(' ').join('') + '.png';
     return (
         <div className={`critterContainer ${expiring ? 'critterExpiring' : ''}`} onClick={this.createPopup}>
             <img src={img_file} alt={this.props.name} title={this.props.name}/>
