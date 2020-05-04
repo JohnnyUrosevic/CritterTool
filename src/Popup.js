@@ -9,8 +9,9 @@ class Popup extends React.Component {
   }
   render() {
     const closePopup = () => this.props.setPopup(null);
+    const style = {top: this.props.windowY, left: this.props.windowX};
     return (
-        <div className="popup" onClick={closePopup}>
+        <div className="popup" onClick={closePopup} style={style}>
             <h1> {this.props.name} </h1>
             <p>Price: {this.props.price} Bells</p>
             <p>Location: {this.props.location}</p>
@@ -26,6 +27,8 @@ Popup.propTypes = {
     location: PropTypes.string.isRequired,
     time: PropTypes.string.isRequired,
     setPopup: PropTypes.func.isRequired,
+    windowX: PropTypes.number.isRequired,
+    windowY: PropTypes.number.isRequired
 }
 
 export default Popup;

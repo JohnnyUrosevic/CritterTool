@@ -10,9 +10,10 @@ class Critter extends React.Component {
 
       this.createPopup = this.createPopup.bind(this);
   }
-  createPopup () {
+  createPopup (e) {
     const popup = <Popup name={this.props.name} setPopup={this.props.setPopup}
-        price={this.props.price} location={this.props.location} time={this.props.time}/>;
+        price={this.props.price} location={this.props.location} time={this.props.time}
+        windowX={e.clientX} windowY={e.clientY}/>;
     this.props.setPopup(popup);
   }
   render() {

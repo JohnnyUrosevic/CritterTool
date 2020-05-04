@@ -34,7 +34,7 @@ class App extends React.Component {
       south: !prevState.south
     }));
   }
-  setPopup = (newPopup) => {
+  setPopup(newPopup) {
     this.setState({
       popup: newPopup
     });
